@@ -1,7 +1,7 @@
 import operator
 employees = {}
 n=int(input("enter the number of elements:"))
-for i in range(3):
+for i in range(n):
     name = input("Enter employee's name: ")
     salary = input("Enter employee's salary: ")
     employees[name] = salary
