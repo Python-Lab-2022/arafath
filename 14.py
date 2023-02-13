@@ -1,7 +1,14 @@
-color_list_1 = set(["white","black","red"])
-color_list_2 = set(["red","green"])
-print("original set elements:")
-print(color_list_1)
-print(color_list_2)
-print("/nDifference of color_list1 and color_list_2:")
-print(color_list_1.difference(color_list_2))
+
+list1=[]
+list2=[]
+a=[]
+n=int(input("Enter the number of elemnts in list 1:"))
+for i in range(0,n):
+    list1.append(str(input()))
+n2=int(input("Enter the number of elemnts in list 2:"))
+for i in range(0,n2):
+    list2.append(str(input()))
+for i in list1:
+    if i not in list2:
+        a.append(i)
+print(a)
